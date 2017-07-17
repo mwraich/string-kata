@@ -46,6 +46,9 @@ RSpec.describe StringCalculator, "#add" do
   end
 
   ####Requirement 8 Oh damn, I forgot about negative numbers. They’re a problem, so let’s just throw an exception when you see one in the input. Note the use of "raise" and the the RSpec "raise_error" matcher for this step. Look them up and learn them. From this point on, I'm leaving it to you to consider and decide upon appropriate test cases.
+  it "raises an error if a negative value is inputted" do
+    expect { raise StandardError }.to raise_error
+  end
 
   ####Requirement 9 The exception message would be a good place to watch for problems, so let’s put a list of the negative values in there, but only when there are multiple negatives in the string.
 
