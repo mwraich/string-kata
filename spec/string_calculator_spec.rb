@@ -26,6 +26,9 @@ RSpec.describe StringCalculator, "#add" do
     expect(StringCalculator.add("7,9")).to eql(16)
   end
   ####Requirement 4 If I give you two strings of digits separated by a comma, I want your calculator to answer with the sum of those numbers. Some good test cases are “12,45” should produce the value 57, and “42,159” should produce the value 201.
+  it "returns 57 if given '12,45'" do
+    expect(StringCalculator.add('12,45')).to eql(57)
+  end
 
   ####Requirement 5 If I give you any number of strings of digits separated by commas, I want your calculator to answer with the sum of those numbers. Some good test cases are “1558,2,2442” should produce the value 4002, “15,22,45,79” should produce the value 161, and "2" should produce the value 2.
 
