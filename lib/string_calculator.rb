@@ -1,7 +1,8 @@
 module StringCalculator
 
   def self.add(string)
-    string.to_i
+    numbers = string.split(',').map(&:to_i)
+    numbers.inject(0){|sum,n| sum + n }
   end
 
   # ...and here when the above becomes too complex.
