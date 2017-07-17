@@ -1,7 +1,7 @@
 module StringCalculator
 
   def self.add(string)
-    0
+    string.to_i
   end
 
   # ...and here when the above becomes too complex.

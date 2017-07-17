@@ -11,5 +11,9 @@ RSpec.describe StringCalculator, "#add" do
     expect(StringCalculator.add("")).to eql(0)
   end
 
+  it "returns 5 for string '5'" do
+    expect(StringCalculator.add("5")).to eql(5)
+  end
+
   # more tests go here
 end
