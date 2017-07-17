@@ -31,6 +31,9 @@ RSpec.describe StringCalculator, "#add" do
   end
 
   ####Requirement 5 If I give you any number of strings of digits separated by commas, I want your calculator to answer with the sum of those numbers. Some good test cases are “1558,2,2442” should produce the value 4002, “15,22,45,79” should produce the value 161, and "2" should produce the value 2.
+  it "returns 4002 if given '1558,2,2442'" do
+    expect(StringCalculator.add('1558,2,2442')).to eql(4002)
+  end
 
   ####Requirement 6 I forgot, sometimes I’ll give you a newline character instead of a comma. You should treat it the same as a comma. For instance “1\n2,3” should produce the value 6. (Why might your solution produce the value 4?)
 
