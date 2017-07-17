@@ -36,6 +36,11 @@ RSpec.describe StringCalculator, "#add" do
   end
 
   ####Requirement 6 I forgot, sometimes I’ll give you a newline character instead of a comma. You should treat it the same as a comma. For instance “1\n2,3” should produce the value 6. (Why might your solution produce the value 4?)
+  it "returns 6 if given '1\n2,3" do
+    expect(StringCalculator.add("1\n2,3")).to eql(6)
+  end
+
+
 
   ####Requirement 7 On second thought, maybe we should make it so delimiters can be set in the input. Whenever I give you two slashes followed by a character on the first line of the input, use that character as the delimiter. For instance, “//;\n2;5” should produce the value 7. (Why might your solution produce the value 2?)
 
